@@ -1,0 +1,12 @@
+name: WizCLI IaC Scan
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  call-workflow:
+    uses: rowan-test-org/wizcli/.github/workflows/wizcli-iac.yml@main
+    secrets:
+      WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
+      WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
