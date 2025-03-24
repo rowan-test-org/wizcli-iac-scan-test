@@ -56,7 +56,7 @@ resource "aws_iam_user" "insecure_user" {
   }
 }
 
-resource "aws_iam_access_key" "insecure_access_key" {
+resource "aws_iam_access_key" "insecure_access_key2" {
   user = aws_iam_user.insecure_user.name
 }
 
