@@ -60,7 +60,7 @@ resource "aws_iam_access_key" "insecure_access_key" {
   user = aws_iam_user.insecure_user.name
 }
 
-resource "aws_iam_policy" "insecure_policy2" {
+resource "aws_iam_policy" "insecure_policy" {
   name = "insecure-policy"
 
   policy = jsonencode({
